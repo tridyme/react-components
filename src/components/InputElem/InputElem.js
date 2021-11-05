@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import {
@@ -6,7 +7,7 @@ import {
   InputLabel,
   InputAdornment,
   FormControl,
-} from '@material-ui/core';
+} from '@mui/material';
 import ToolTips from '../ToolTips';
 import './InputElem.css';
 
@@ -43,29 +44,39 @@ const InputElem = ({
     <div className={classes.root}>
       <FormControl
         className={clsx(classes.margin, classes.withoutLabel, classes.textField)}
-        // variant="outlined"
+      // variant="outlined"
       >
         <InputLabel htmlFor="outlined-adornment-amount">{data.description}</InputLabel>
         <Input
           className={classes.input}
           value={data.value}
           startAdornment={
-          <InputAdornment
-            position="start"
-            className={classes.inputAdornment}
-          >
-            {data.text}
-            <ToolTips
-              description={data.description}
-              target={data.text}
-            />
-          </InputAdornment>}
+            <InputAdornment
+              position="start"
+              className={classes.inputAdornment}
+            >
+              {data.text}
+              <ToolTips
+                description={data.description}
+                target={data.text}
+              />
+            </InputAdornment>}
           endAdornment={<InputAdornment position="end">{data.unit}</InputAdornment>}
           onChange={onChange}
         />
       </FormControl>
     </div>
   );
+};
+
+
+InputElem.propTypes = {
+  data: PropTypes.object.isRequired,
+  onChange: PropTypes.func,
+};
+
+InputElem.defaultProps = {
+  onChange: undefined,
 };
 
 export default InputElem;

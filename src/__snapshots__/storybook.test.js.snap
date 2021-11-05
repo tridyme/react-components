@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Example/Button Default 1`] = `
+<button
+  className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-sghohy-MuiButtonBase-root-MuiButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onContextMenu={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  style={null}
+  tabIndex={0}
+  type="button"
+>
+  My Button
+</button>
+`;
+
+exports[`Storyshots TriDyme/Button Default 1`] = `
+<button
+  className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-sghohy-MuiButtonBase-root-MuiButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onContextMenu={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  style={null}
+  tabIndex={0}
+  type="button"
+>
+  Analysis
+</button>
+`;
+
+exports[`Storyshots TriDyme/InputElem Default 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <div
+    className="MuiFormControl-root makeStyles-margin-2 makeStyles-withoutLabel-3 makeStyles-textField-4 css-1nrlq1o-MuiFormControl-root"
+  >
+    <label
+      className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1kty9di-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink={true}
+      htmlFor="outlined-adornment-amount"
+    >
+      largeur de la section
+    </label>
+    <div
+      className="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd makeStyles-input-5 css-1480iag-MuiInputBase-root-MuiInput-root"
+      onClick={[Function]}
+    >
+      <div
+        className="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium makeStyles-inputAdornment-6 css-ittuaa-MuiInputAdornment-root"
+      >
+        <span
+          className="notranslate"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203;",
+            }
+          }
+        />
+        b
+        <button
+          aria-label="largeur de la section"
+          aria-labelledby={null}
+          className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element={true}
+          disabled={false}
+          onBlur={[Function]}
+          onContextMenu={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="HelpIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
+            />
+          </svg>
+          <span
+            className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+      <input
+        aria-invalid={false}
+        className="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-1x51dt5-MuiInputBase-input-MuiInput-input"
+        disabled={false}
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+        value={3}
+      />
+      <div
+        className="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 css-1pnmrwp-MuiTypography-root"
+        >
+          m
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
