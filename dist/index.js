@@ -16,6 +16,6 @@ Object.defineProperty(exports, "SearchBar", {
   }
 });
 
-var _Button = require("./Button/Button");
+var _Button = require(".//Button/Button");
 
 var _SearchBar = require("./SearchBar/SearchBar");
