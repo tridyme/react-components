@@ -46,12 +46,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/ArnaudLacroixTriazur/react-components.git"
+    "url": "git+https://github.com/tridyme/react-components"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/ArnaudLacroixTriazur/react-components/issues"
+    "url": "https://github.com/tridyme/react-components/issues"
   },
-  "homepage": "https://gitlab.com/ArnaudLacroixTriazur/react-components#readme"
+  "homepage": "https://github.com/tridyme/react-components/react-components#readme"
 }
