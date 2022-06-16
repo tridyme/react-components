@@ -1,6 +1,6 @@
 import React, { Suspense, useRef, useState, useEffect } from "react";
 import { Canvas, extend, useFrame, useThree } from "react-three-fiber";
-import { Controls } from "./Components/Controls";
+import { Controls } from "./Components/Controls/Controls";
 import { Box } from "./Components/Elements/Box/Box";
 import { Node } from "./Components/Elements/Node/Node";
 import { Line } from "./Components/Elements/Line/Line";
