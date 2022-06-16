@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import NavBar from "../NavBar";
+import { NavBar } from "../NavBar/NavBar";
 import "./Layout.css";
 
 const Layout = ({ children }) => (

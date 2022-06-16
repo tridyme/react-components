@@ -7,7 +7,7 @@ import {
   InputAdornment,
   FormControl,
 } from "@material-ui/core";
-import ToolTips from "../ToolTips/ToolTips";
+import { ToolTips } from "../ToolTips/ToolTips";
 
 const useStyles = makeStyles((theme) => ({
   root: {

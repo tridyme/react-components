@@ -16,7 +16,7 @@ import {
 } from "@material-ui/core";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import NavBarElem from "../NavBarElem";
+import { NavBarElem } from "../NavBarElem/NavBarElem";
 
 const drawerWidth = 240;
 

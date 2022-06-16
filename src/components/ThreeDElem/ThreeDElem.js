@@ -1,11 +1,11 @@
 import React, { Suspense, useRef, useState, useEffect } from "react";
 import { Canvas, extend, useFrame, useThree } from "react-three-fiber";
-import Controls from "./Components/Controls";
-import Box from "./Components/Elements/Box/Box";
-import Node from "./Components/Elements/Node/Node";
-import Line from "./Components/Elements/Line/Line";
-import Model from "./Components/Elements/Model/Model";
-import Arrow from "./Components/Elements/Arrow/Arrow";
+import { Controls } from "./Components/Controls";
+import { Box } from "./Components/Elements/Box/Box";
+import { Node } from "./Components/Elements/Node/Node";
+import { Line } from "./Components/Elements/Line/Line";
+import { Model } from "./Components/Elements/Model/Model";
+import { Arrow } from "./Components/Elements/Arrow/Arrow";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { IfcViewerAPI } from "web-ifc-viewer";
 import { IFCLoader } from "web-ifc-three/IFCLoader";
