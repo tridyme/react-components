@@ -1,6 +1,6 @@
 {
   "name": "@arnaudlacroixdev/react-components-bis",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Tridyme components library",
   "main": "dist/index.js",
   "private": false,
