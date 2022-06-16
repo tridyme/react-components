@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactstrap = require("reactstrap");
 
-var _NavBar = _interopRequireDefault(require("../NavBar"));
+var _NavBar = require("../NavBar/NavBar");
 
 require("./Layout.css");
 
@@ -19,7 +19,7 @@ var Layout = function Layout(_ref) {
   var children = _ref.children;
   return /*#__PURE__*/_react.default.createElement(_reactstrap.Col, {
     md: 12
-  }, /*#__PURE__*/_react.default.createElement(_reactstrap.Row, null, /*#__PURE__*/_react.default.createElement(_NavBar.default, null)), /*#__PURE__*/_react.default.createElement(_reactstrap.Row, null, /*#__PURE__*/_react.default.createElement(_reactstrap.Container, {
+  }, /*#__PURE__*/_react.default.createElement(_reactstrap.Row, null, /*#__PURE__*/_react.default.createElement(_NavBar.NavBar, null)), /*#__PURE__*/_react.default.createElement(_reactstrap.Row, null, /*#__PURE__*/_react.default.createElement(_reactstrap.Container, {
     fluid: false,
     className: "views-container"
   }, children)));

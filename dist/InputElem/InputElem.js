@@ -13,7 +13,7 @@ var _styles = require("@material-ui/core/styles");
 
 var _core = require("@material-ui/core");
 
-var _ToolTips = _interopRequireDefault(require("../ToolTips"));
+var _ToolTips = require("../ToolTips/ToolTips");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -64,7 +64,7 @@ var InputElem = function InputElem(_ref) {
     startAdornment: text && /*#__PURE__*/_react.default.createElement(_core.InputAdornment, {
       position: "start",
       className: classes.inputAdornment
-    }, text, text && description && /*#__PURE__*/_react.default.createElement(_ToolTips.default, {
+    }, text, text && description && /*#__PURE__*/_react.default.createElement(_ToolTips.ToolTips, {
       description: description,
       target: text
     })),

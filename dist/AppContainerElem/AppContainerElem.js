@@ -21,7 +21,7 @@ var _ChevronLeft = _interopRequireDefault(require("@material-ui/icons/ChevronLef
 
 var _ChevronRight = _interopRequireDefault(require("@material-ui/icons/ChevronRight"));
 
-var _NavBarElem = _interopRequireDefault(require("../NavBarElem"));
+var _NavBarElem = require("../NavBarElem/NavBarElem");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -128,7 +128,7 @@ var AppContainerElem = function AppContainerElem(_ref) {
 
   return /*#__PURE__*/_react.default.createElement("div", {
     className: classes.root
-  }, /*#__PURE__*/_react.default.createElement(_core.CssBaseline, null), /*#__PURE__*/_react.default.createElement(_NavBarElem.default, {
+  }, /*#__PURE__*/_react.default.createElement(_core.CssBaseline, null), /*#__PURE__*/_react.default.createElement(_NavBarElem.NavBarElem, {
     title: title,
     classes: classes,
     handleDrawerOpen: handleDrawerOpen,

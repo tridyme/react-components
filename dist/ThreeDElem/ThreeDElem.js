@@ -11,25 +11,23 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactThreeFiber = require("react-three-fiber");
 
-var _Controls = _interopRequireDefault(require("./Components/Controls"));
+var _Controls = require("./Components/Controls");
 
-var _Box = _interopRequireDefault(require("./Components/Elements/Box/Box"));
+var _Box = require("./Components/Elements/Box/Box");
 
-var _Node = _interopRequireDefault(require("./Components/Elements/Node/Node"));
+var _Node = require("./Components/Elements/Node/Node");
 
-var _Line = _interopRequireDefault(require("./Components/Elements/Line/Line"));
+var _Line = require("./Components/Elements/Line/Line");
 
-var _Model = _interopRequireDefault(require("./Components/Elements/Model/Model"));
+var _Model = require("./Components/Elements/Model/Model");
 
-var _Arrow = _interopRequireDefault(require("./Components/Elements/Arrow/Arrow"));
+var _Arrow = require("./Components/Elements/Arrow/Arrow");
 
 var _GLTFLoader = require("three/examples/jsm/loaders/GLTFLoader");
 
 var _webIfcViewer = require("web-ifc-viewer");
 
 var _IFCLoader = require("web-ifc-three/IFCLoader");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -104,11 +102,11 @@ var ThreeDElem = function ThreeDElem(_ref) {
     size: 100,
     divisions: 100
   }), listNodes.map(function (item, index) {
-    return /*#__PURE__*/_react.default.createElement(_Node.default, {
+    return /*#__PURE__*/_react.default.createElement(_Node.Node, {
       position: [item.X, item.Y, item.Z],
       key: index
     });
-  }), Children, /*#__PURE__*/_react.default.createElement(_Controls.default, null));
+  }), Children, /*#__PURE__*/_react.default.createElement(_Controls.Controls, null));
 };
 
 exports.ThreeDElem = ThreeDElem;
