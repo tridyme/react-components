@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const InputElem = ({ data, updateValue }) => {
+const OldInputElem = ({ data, updateValue }) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -71,4 +71,4 @@ const InputElem = ({ data, updateValue }) => {
   );
 };
 
-export { InputElem };
+export { OldInputElem };

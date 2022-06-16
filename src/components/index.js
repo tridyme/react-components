@@ -8,7 +8,7 @@ export { Layout } from "./Layout/Layout";
 export { Loader } from "./Loader/Loader";
 export { NavBar } from "./NavBar/NavBar";
 export { NavBarElem } from "./NavBarElem/NavBarElem";
-export { InputElem } from "./OldInputElem/InputElem";
+export { OldInputElem } from "./OldInputElem/OldInputElem";
 export { OutputElem } from "./OutputElem/OutputElem";
 export { SearchBar } from "./SearchBar/SearchBar";
 export { SideBar } from "./SideBar/SideBar";
