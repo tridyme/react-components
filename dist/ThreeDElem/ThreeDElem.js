@@ -11,7 +11,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactThreeFiber = require("react-three-fiber");
 
-var _Controls = require("./Components/Controls");
+var _Controls = require("./Components/Controls/Controls");
 
 var _Box = require("./Components/Elements/Box/Box");
 
