@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.useInput = void 0;
+exports.default = void 0;
 
 var _react = require("react");
 
@@ -29,7 +29,7 @@ var useInput = function useInput(initialValue, calcul) {
     value: value,
     setValue: setValue,
     reset: function reset() {
-      return setValue("");
+      return setValue('');
     },
     bind: {
       value: value,
@@ -40,4 +40,5 @@ var useInput = function useInput(initialValue, calcul) {
   };
 };
 
-exports.useInput = useInput;
+var _default = useInput;
+exports.default = _default;

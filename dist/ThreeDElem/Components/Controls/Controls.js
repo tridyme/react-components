@@ -5,7 +5,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Controls = void 0;
+exports.Controls = Controls;
 
 var _react = _interopRequireWildcard(require("react"));
 
@@ -21,7 +21,7 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
   OrbitControls: _OrbitControls.OrbitControls
 });
 
-var Controls = function Controls() {
+function Controls() {
   var controlsRef = (0, _react.useRef)();
 
   var _useThree = (0, _reactThreeFiber.useThree)(),
@@ -46,6 +46,4 @@ var Controls = function Controls() {
     maxPolarAngle={Math.PI / 2}*/
 
   }));
-};
-
-exports.Controls = Controls;
+}

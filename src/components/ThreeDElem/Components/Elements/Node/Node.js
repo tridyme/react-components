@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useFrame } from "react-three-fiber";
 
-function Node(props) {
+const Node = (props) => {
   // This reference will give us direct access to the mesh
   const mesh = useRef();
 
@@ -28,6 +28,6 @@ function Node(props) {
       />
     </mesh>
   );
-}
+};
 
 export { Node };

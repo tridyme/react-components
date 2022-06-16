@@ -36,7 +36,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
     },
     iconButton: {
       border: "none",
-      color: "#E6464D" // "&:hover": {
+      color: "black" // "&:hover": {
       //   backgroundColor: "#E6464D",
       //   color: "white",
       // },

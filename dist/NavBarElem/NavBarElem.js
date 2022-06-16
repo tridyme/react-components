@@ -27,7 +27,9 @@ var NavBarElem = function NavBarElem(_ref) {
       handleDrawerOpen = _ref.handleDrawerOpen,
       open = _ref.open;
   // const classes = useStyles();
-  // const { REACT_APP_LOGO, REACT_APP_COMPANY } = process.env;
+  var _process$env = process.env,
+      REACT_APP_LOGO = _process$env.REACT_APP_LOGO,
+      REACT_APP_COMPANY = _process$env.REACT_APP_COMPANY;
   return /*#__PURE__*/_react.default.createElement(_core.AppBar, {
     position: "fixed",
     className: (0, _clsx3.default)(classes.appBar, _defineProperty({}, classes.appBarShift, open))
@@ -40,12 +42,25 @@ var NavBarElem = function NavBarElem(_ref) {
   }, /*#__PURE__*/_react.default.createElement(_Menu.default, null)), /*#__PURE__*/_react.default.createElement(_core.Typography, {
     variant: "h6",
     noWrap: true
-  }, title), process.env.REACT_APP_COMPANY === "VBMC" && /*#__PURE__*/_react.default.createElement("div", {
+  }, title), REACT_APP_COMPANY === "VBMC" && /*#__PURE__*/_react.default.createElement("div", {
     style: {
       position: "absolute",
       right: "10px"
     }
   }, /*#__PURE__*/_react.default.createElement("a", {
+    style: {
+      color: "inherit",
+      margin: "0 20px"
+    },
+    target: "_blank"
+  }, "v0.13.0"), /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://documentation-ciqo.notion.site/documentation-ciqo/Doc-CIQO-f47d770ccf344ea6ae50119e58c82198",
+    style: {
+      color: "inherit",
+      margin: "0 20px"
+    },
+    target: "_blank"
+  }, "Documentation"), /*#__PURE__*/_react.default.createElement("a", {
     href: "https://boxboisbim.mydatbim.com/mydatbimCom/mentions-legales",
     style: {
       color: "inherit",

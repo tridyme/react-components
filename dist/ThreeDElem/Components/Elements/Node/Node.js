@@ -5,7 +5,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Node = Node;
+exports.Node = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
@@ -29,7 +29,7 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-function Node(props) {
+var Node = function Node(props) {
   // This reference will give us direct access to the mesh
   var mesh = (0, _react.useRef)(); // Set up state for the hovered and active state
 
@@ -64,4 +64,6 @@ function Node(props) {
     attach: "material",
     color: hovered || active ? "red" : "blue"
   }));
-}
+};
+
+exports.Node = Node;

@@ -45,6 +45,12 @@ Object.defineProperty(exports, "Loader", {
     return _Loader.Loader;
   }
 });
+Object.defineProperty(exports, "MapElem", {
+  enumerable: true,
+  get: function get() {
+    return _MapElem.MapElem;
+  }
+});
 Object.defineProperty(exports, "NavBar", {
   enumerable: true,
   get: function get() {
@@ -127,6 +133,8 @@ var _InputElem = require("./InputElem/InputElem");
 var _Layout = require("./Layout/Layout");
 
 var _Loader = require("./Loader/Loader");
+
+var _MapElem = require("./MapElem/MapElem");
 
 var _NavBar = require("./NavBar/NavBar");
 

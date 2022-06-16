@@ -21,7 +21,7 @@ import "./NavBar.css";
 import MenuBook from "@material-ui/icons/MenuBook";
 import Business from "@material-ui/icons/Business";
 
-const NavBar = () => {
+const NavBar = ({}) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const { REACT_APP_LOGO, REACT_APP_COMPANY } = process.env;

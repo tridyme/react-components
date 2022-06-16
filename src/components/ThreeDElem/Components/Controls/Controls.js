@@ -3,7 +3,7 @@ import { extend, useFrame, useThree } from "react-three-fiber";
 import { OrbitControls } from "./OrbitControls";
 extend({ OrbitControls });
 
-const Controls = () => {
+function Controls() {
   const controlsRef = useRef();
   const { camera, gl } = useThree();
 
@@ -27,6 +27,6 @@ const Controls = () => {
       />
     </>
   );
-};
+}
 
 export { Controls };

@@ -6,6 +6,7 @@ export { useInput } from "./HookHelpers/UseInput";
 export { InputElem } from "./InputElem/InputElem";
 export { Layout } from "./Layout/Layout";
 export { Loader } from "./Loader/Loader";
+export { MapElem } from "./MapElem/MapElem";
 export { NavBar } from "./NavBar/NavBar";
 export { NavBarElem } from "./NavBarElem/NavBarElem";
 export { OldInputElem } from "./OldInputElem/OldInputElem";
