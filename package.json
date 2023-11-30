@@ -1,6 +1,6 @@
 {
   "name": "@tridyme/react-components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "dist/index.js",
   "private": false,
   "files": [
@@ -20,6 +20,7 @@
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
     "@storybook/addon-storyshots": "^6.3.12",
+    "storybook": "^7.6.1",
     "styled-components": "^5.3.3",
     "web-vitals": "^0.2.4"
   },
