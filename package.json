@@ -1,6 +1,6 @@
 {
   "name": "@tridyme/react-components",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "private": false,
   "files": [
@@ -12,18 +12,14 @@
     "url": "https://github.com/tridyme/react-components.git"
   },
   "peerDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.3"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^5.0.1"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
     "@storybook/addon-storyshots": "^6.3.12",
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.0",
-    "react-test-renderer": "^17.0.2",
     "styled-components": "^5.3.3",
     "web-vitals": "^0.2.4"
   },
@@ -34,6 +30,7 @@
     "eject": "react-scripts eject",
     "clean": "rimraf dist",
     "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__",
+    "watch": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__ --watch",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },

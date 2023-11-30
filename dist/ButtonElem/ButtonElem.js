@@ -4,28 +4,24 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = ButtonElem;
-
 var _react = _interopRequireDefault(require("react"));
-
 var _propTypes = _interopRequireDefault(require("prop-types"));
-
 var _core = require("@material-ui/core");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 function ButtonElem(_ref) {
-  var label = _ref.label,
-      backgroundColor = _ref.backgroundColor,
-      onClick = _ref.onClick;
+  let {
+    label,
+    backgroundColor,
+    onClick
+  } = _ref;
   return /*#__PURE__*/_react.default.createElement(_core.Button, {
     variant: "contained",
     onClick: onClick,
     style: backgroundColor && {
-      backgroundColor: backgroundColor
+      backgroundColor: "red"
     }
   }, label);
 }
-
 ButtonElem.propTypes = {
   backgroundColor: _propTypes.default.string,
   label: _propTypes.default.string.isRequired,

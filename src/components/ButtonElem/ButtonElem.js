@@ -9,7 +9,7 @@ export default function ButtonElem({ label, backgroundColor, onClick }) {
     <Button
       variant="contained"
       onClick={onClick}
-      style={backgroundColor && { backgroundColor }}>
+      style={backgroundColor && { backgroundColor: "red" }}>
       {label}
     </Button>
   );
