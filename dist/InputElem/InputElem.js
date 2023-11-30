@@ -13,7 +13,7 @@ var _clsx = _interopRequireDefault(require("clsx"));
 
 var _styles = require("@material-ui/core/styles");
 
-var _material = require("@mui/material");
+var _core = require("@material-ui/core");
 
 var _ToolTips = _interopRequireDefault(require("../ToolTips"));
 
@@ -53,22 +53,22 @@ var InputElem = function InputElem(_ref) {
   var classes = useStyles();
   return /*#__PURE__*/_react.default.createElement("div", {
     className: classes.root
-  }, /*#__PURE__*/_react.default.createElement(_material.FormControl, {
+  }, /*#__PURE__*/_react.default.createElement(_core.FormControl, {
     className: (0, _clsx.default)(classes.margin, classes.withoutLabel, classes.textField) // variant="outlined"
 
-  }, /*#__PURE__*/_react.default.createElement(_material.InputLabel, {
+  }, /*#__PURE__*/_react.default.createElement(_core.InputLabel, {
     htmlFor: "outlined-adornment-amount"
-  }, data.description), /*#__PURE__*/_react.default.createElement(_material.Input, {
+  }, data.description), /*#__PURE__*/_react.default.createElement(_core.Input, {
     className: classes.input,
     value: data.value,
-    startAdornment: /*#__PURE__*/_react.default.createElement(_material.InputAdornment, {
+    startAdornment: /*#__PURE__*/_react.default.createElement(_core.InputAdornment, {
       position: "start",
       className: classes.inputAdornment
     }, data.text, /*#__PURE__*/_react.default.createElement(_ToolTips.default, {
       description: data.description,
       target: data.text
     })),
-    endAdornment: /*#__PURE__*/_react.default.createElement(_material.InputAdornment, {
+    endAdornment: /*#__PURE__*/_react.default.createElement(_core.InputAdornment, {
       position: "end"
     }, data.unit),
     onChange: onChange

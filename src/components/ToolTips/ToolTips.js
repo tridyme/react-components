@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import {
   Tooltip,
   IconButton
-} from '@mui/material';
-import HelpIcon from '@mui/icons-material/Help';
+} from '@material-ui/core';
+import HelpIcon from '@material-ui/icons/Help';
 import './ToolTips.css';
 
 const ToolTips = (props) => {

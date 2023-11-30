@@ -9,9 +9,9 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _material = require("@mui/material");
+var _core = require("@material-ui/core");
 
-var _Help = _interopRequireDefault(require("@mui/icons-material/Help"));
+var _Help = _interopRequireDefault(require("@material-ui/icons/Help"));
 
 require("./ToolTips.css");
 
@@ -33,10 +33,10 @@ var ToolTips = function ToolTips(props) {
     //     {props.description}
     //   </Tooltip>
     // </div>
-    _react.default.createElement(_material.Tooltip, {
+    _react.default.createElement(_core.Tooltip, {
       title: props.description,
       placement: "top"
-    }, /*#__PURE__*/_react.default.createElement(_material.IconButton, null, /*#__PURE__*/_react.default.createElement(_Help.default, null)))
+    }, /*#__PURE__*/_react.default.createElement(_core.IconButton, null, /*#__PURE__*/_react.default.createElement(_Help.default, null)))
   );
 };
 

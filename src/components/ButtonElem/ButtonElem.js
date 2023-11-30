@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Button
-} from '@mui/material';
+} from '@material-ui/core';
 
 export default function ButtonElem({ label, backgroundColor, onClick }) {
   return (

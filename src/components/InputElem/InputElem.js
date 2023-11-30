@@ -7,7 +7,7 @@ import {
   InputLabel,
   InputAdornment,
   FormControl,
-} from '@mui/material';
+} from '@material-ui/core';
 import ToolTips from '../ToolTips';
 import './InputElem.css';
 
