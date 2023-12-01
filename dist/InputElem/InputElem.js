@@ -38,7 +38,9 @@ const useStyles = (0, _styles.makeStyles)(theme => ({
 const InputElem = _ref => {
   let {
     data,
-    onChange
+    onChange,
+    props,
+    style
   } = _ref;
   const classes = useStyles();
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -51,12 +53,18 @@ const InputElem = _ref => {
   }, data.description), /*#__PURE__*/_react.default.createElement(_core.Input, {
     className: classes.input,
     value: data.value,
-    startAdornment: /*#__PURE__*/_react.default.createElement(_core.InputAdornment, {
+    disableUnderline: props.disableUnderline,
+    disabled: props.disabled,
+    inputProps: {
+      style: style
+    },
+    startAdornment: !props.disableInputAdornment && /*#__PURE__*/_react.default.createElement(_core.InputAdornment, {
       position: "start",
       className: classes.inputAdornment
     }, data.text, /*#__PURE__*/_react.default.createElement(_ToolTips.default, {
       description: data.description,
-      target: data.text
+      target: data.text,
+      color: style.toolTipsColor
     })),
     endAdornment: /*#__PURE__*/_react.default.createElement(_core.InputAdornment, {
       position: "end"

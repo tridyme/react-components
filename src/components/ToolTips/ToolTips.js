@@ -18,7 +18,7 @@ const ToolTips = (props) => {
     //   </Tooltip>
     // </div>
     <Tooltip title={props.description} placement="top">
-      <IconButton>
+      <IconButton style={{color :  props.color}} > 
         <HelpIcon />
       </IconButton>
     </Tooltip>

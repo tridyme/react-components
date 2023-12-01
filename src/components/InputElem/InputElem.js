@@ -37,7 +37,9 @@ const useStyles = makeStyles(theme => ({
 
 const InputElem = ({
   data,
-  onChange
+  onChange,
+  props, 
+  style, 
 }) => {
   const classes = useStyles();
   return (
@@ -50,7 +52,11 @@ const InputElem = ({
         <Input
           className={classes.input}
           value={data.value}
+          disableUnderline = {props.disableUnderline}
+          disabled = {props.disabled}
+          inputProps={{ style: style }}
           startAdornment={
+            !props.disableInputAdornment && (
             <InputAdornment
               position="start"
               className={classes.inputAdornment}
@@ -59,8 +65,11 @@ const InputElem = ({
               <ToolTips
                 description={data.description}
                 target={data.text}
+                color = {style.toolTipsColor}
               />
-            </InputAdornment>}
+            </InputAdornment>
+            )
+          }
           endAdornment={<InputAdornment position="end">{data.unit}</InputAdornment>}
           onChange={onChange}
         />

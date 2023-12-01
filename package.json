@@ -13,12 +13,13 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "^5.0.1",
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
     "@storybook/addon-storyshots": "^6.3.12",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-number-format": "^5.1.4",
+    "react-scripts": "^5.0.1",
     "storybook": "^7.6.1",
     "styled-components": "^5.3.3",
     "web-vitals": "^0.2.4"

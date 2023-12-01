@@ -11,15 +11,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function ButtonElem(_ref) {
   let {
     label,
-    backgroundColor,
+    style,
     onClick
   } = _ref;
   return /*#__PURE__*/_react.default.createElement(_core.Button, {
     variant: "contained",
     onClick: onClick,
-    style: backgroundColor && {
-      backgroundColor: "red"
-    }
+    style: style
   }, label);
 }
 ButtonElem.propTypes = {

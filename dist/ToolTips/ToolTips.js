@@ -26,7 +26,11 @@ const ToolTips = props => {
     _react.default.createElement(_core.Tooltip, {
       title: props.description,
       placement: "top"
-    }, /*#__PURE__*/_react.default.createElement(_core.IconButton, null, /*#__PURE__*/_react.default.createElement(_Help.default, null)))
+    }, /*#__PURE__*/_react.default.createElement(_core.IconButton, {
+      style: {
+        color: props.color
+      }
+    }, /*#__PURE__*/_react.default.createElement(_Help.default, null)))
   );
 };
 var _default = exports.default = ToolTips;
