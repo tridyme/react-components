@@ -11,6 +11,7 @@ var _styles = require("@material-ui/core/styles");
 var _core = require("@material-ui/core");
 var _ToolTips = _interopRequireDefault(require("../ToolTips"));
 require("./InputElem.css");
+var _reactNumberFormat = require("react-number-format");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const useStyles = (0, _styles.makeStyles)(theme => ({
   root: {
@@ -48,29 +49,44 @@ const InputElem = _ref => {
   }, /*#__PURE__*/_react.default.createElement(_core.FormControl, {
     className: (0, _clsx.default)(classes.margin, classes.withoutLabel, classes.textField)
     // variant="outlined"
-  }, /*#__PURE__*/_react.default.createElement(_core.InputLabel, {
-    htmlFor: "outlined-adornment-amount"
-  }, data.description), /*#__PURE__*/_react.default.createElement(_core.Input, {
-    className: classes.input,
-    value: data.value,
-    disableUnderline: props.disableUnderline,
-    disabled: props.disabled,
-    inputProps: {
-      style: style
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: classes.label
+  }, data.description), /*#__PURE__*/_react.default.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center'
+    }
+  }, typeof data.value === "number" ? /*#__PURE__*/_react.default.createElement(_reactNumberFormat.NumericFormat, {
+    type: "text",
+    style: {
+      width: '100%',
+      color: props.disabled ? 'black' : '#0082DE'
     },
-    startAdornment: !props.disableInputAdornment && /*#__PURE__*/_react.default.createElement(_core.InputAdornment, {
-      position: "start",
-      className: classes.inputAdornment
-    }, data.text, /*#__PURE__*/_react.default.createElement(_ToolTips.default, {
-      description: data.description,
-      target: data.text,
-      color: style.toolTipsColor
-    })),
-    endAdornment: /*#__PURE__*/_react.default.createElement(_core.InputAdornment, {
-      position: "end"
-    }, data.unit),
-    onChange: onChange
-  })));
+    onChange: onChange,
+    value: data.value,
+    disabled: props.disabled
+  }) : /*#__PURE__*/_react.default.createElement(_core.Input, {
+    style: {
+      border: 0,
+      color: "#0082DE",
+      textAlign: 'center'
+    },
+    type: "text",
+    onChange: onChange,
+    value: data.value,
+    disableUnderline: true
+  }), /*#__PURE__*/_react.default.createElement(_core.Typography, {
+    style: {
+      marginLeft: '1rem'
+    }
+  }, data.unit), !props.disableInputAdornment && /*#__PURE__*/_react.default.createElement(_core.InputAdornment, {
+    position: "start",
+    className: classes.inputAdornment
+  }, data.text, /*#__PURE__*/_react.default.createElement(_ToolTips.default, {
+    description: data.description,
+    target: data.text,
+    color: style.toolTipsColor
+  })))));
 };
 InputElem.propTypes = {
   data: _propTypes.default.object.isRequired,

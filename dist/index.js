@@ -15,6 +15,12 @@ Object.defineProperty(exports, "CardElem", {
     return _CardElem.default;
   }
 });
+Object.defineProperty(exports, "CheckBoxElem", {
+  enumerable: true,
+  get: function () {
+    return _CheckBoxElem.default;
+  }
+});
 Object.defineProperty(exports, "InputElem", {
   enumerable: true,
   get: function () {
@@ -31,6 +37,12 @@ Object.defineProperty(exports, "OutputTableElem", {
   enumerable: true,
   get: function () {
     return _OutputTableElem.default;
+  }
+});
+Object.defineProperty(exports, "RadioElem", {
+  enumerable: true,
+  get: function () {
+    return _RadioElem.default;
   }
 });
 Object.defineProperty(exports, "SearchBarElem", {
@@ -52,4 +64,6 @@ var _SearchBarElem = _interopRequireDefault(require("./SearchBarElem"));
 var _SelectElem = _interopRequireDefault(require("./SelectElem"));
 var _OutputTableElem = _interopRequireDefault(require("./OutputTableElem"));
 var _InputTableElem = _interopRequireDefault(require("./InputTableElem"));
+var _RadioElem = _interopRequireDefault(require("./RadioElem"));
+var _CheckBoxElem = _interopRequireDefault(require("./CheckBoxElem"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

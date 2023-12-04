@@ -8,7 +8,8 @@ const InputTableElem = ({
 	data,
 	ui,
 	onChange,
-	disabled
+	disabled, 
+  style
 }) => {
 	// const [columns, setColumns] = useState(["nom", "valeur", "unitées", "description"]);
 	const [rows, setRows] = useState([]);
@@ -16,14 +17,14 @@ const InputTableElem = ({
 		setRows(ui)
 	}, []);
 
-
+  const columnsWidth = style?.columnsWidth
 	return (
   <div style={{width:'100%'}}>
-    <table>
+    <table style={{width:'100%'}}>
       <thead>
         <tr key={0}>
           {headers.map((header, index) => (
-            <td key={index} style={{ textAlign: 'center' }}>{header}</td>
+            <td key={index} style={{ textAlign: 'center', fontWeight:'bold' ,  width: columnsWidth?.[index] }}>{header}</td>
           ))}
         </tr>
       </thead>
@@ -31,7 +32,7 @@ const InputTableElem = ({
         {rows.map((row, index) => (
           <tr key={index * 4} style={{ borderTop: "solid 0px #E8E8E8", borderBottom: "solid 0px #E8E8E8" }}>
             {keys.map((key, keyIndex) => (
-            <td key={keyIndex}>
+            <td key={keyIndex} style={{textAlign:'center'}}>
               {keyIndex === 1 ? (
                 typeof data[row]['value'] === "number" ? (
                   <NumericFormat

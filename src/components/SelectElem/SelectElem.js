@@ -7,6 +7,8 @@ import {
   Typography,
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { withStyles } from "@material-ui/core/styles";
+import clsx from "clsx";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -32,6 +34,21 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
+const iconStyles = {
+  selectIcon: {
+    color: "#0082DE"
+  }
+};
+const CustomExpandMore = withStyles(iconStyles)(
+  ({ className, classes, ...rest }) => {
+    return (
+      <ExpandMoreIcon
+        {...rest}
+        className={clsx(className, classes.selectIcon)}
+      />
+    );
+  }
+);
 const SelectElem = ({
   label,
   value,
@@ -58,7 +75,7 @@ const SelectElem = ({
         value={value}
         onChange={onChange}
         disableUnderline
-        IconComponent={() => <ExpandMoreIcon color="primary" />}
+        IconComponent={CustomExpandMore}
       >
         {list?.map((item, index) => (
           <MenuItem key={index} value={item.id}>{`${item.name}`}</MenuItem>
