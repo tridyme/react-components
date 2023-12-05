@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Button, styled
+  Button,
 } from '@material-ui/core';
 
-export default function ButtonElem({ label, style, onClick }) {
+export default function ButtonElem({ label, onClick, ...style }) {
   return (
     <Button
-      variant="contained"
       onClick={onClick}
-      style={style}>
+      {...style}>
       {label}
     </Button>
   );
