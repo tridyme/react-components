@@ -48,11 +48,12 @@ const InputTableElem = ({
                   />
                 ) : (
                   <Input
-                    style={{ border: 0, color: "blue", textAlign: 'center' }}
+                    style={{ border: 0, color: disabled ? 'black' :  "blue", textAlign: 'center' }}
                     type="text"
                     onChange={onChange(data[row]['id'])}
                     value={data[row]['value']}
                     disableUnderline={true}
+                    inputProps={{textAlign:'center', color : disabled ? 'black' :  "blue"}}
                   />
                 )
               ) : 

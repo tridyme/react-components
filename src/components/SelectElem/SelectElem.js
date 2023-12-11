@@ -76,6 +76,7 @@ const SelectElem = ({
         onChange={onChange}
         disableUnderline
         IconComponent={CustomExpandMore}
+        disabled = {disabled}
       >
         {list?.map((item, index) => (
           <MenuItem key={index} value={item.id}>{`${item.name}`}</MenuItem>
