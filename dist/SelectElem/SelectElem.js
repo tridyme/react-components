@@ -74,7 +74,8 @@ const SelectElem = _ref2 => {
     value: value,
     onChange: onChange,
     disableUnderline: true,
-    IconComponent: CustomExpandMore
+    IconComponent: CustomExpandMore,
+    disabled: disabled
   }, list === null || list === void 0 ? void 0 : list.map((item, index) => /*#__PURE__*/_react.default.createElement(_core.MenuItem, {
     key: index,
     value: item.id

@@ -67,13 +67,17 @@ const InputTableElem = _ref => {
   }) : /*#__PURE__*/_react.default.createElement(_Input.default, {
     style: {
       border: 0,
-      color: "blue",
+      color: disabled ? 'black' : "blue",
       textAlign: 'center'
     },
     type: "text",
     onChange: onChange(data[row]['id']),
     value: data[row]['value'],
-    disableUnderline: true
+    disableUnderline: true,
+    inputProps: {
+      textAlign: 'center',
+      color: disabled ? 'black' : "blue"
+    }
   }) : data["".concat(row)]["".concat(key)]['value'] ? data["".concat(row)]["".concat(key)]['value'] : "".concat(data["".concat(row)]["".concat(key)]))))))));
 };
 var _default = exports.default = InputTableElem;
